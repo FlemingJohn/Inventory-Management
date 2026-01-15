@@ -1,9 +1,9 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Outlet } from 'react-router-dom';
 import Header from './Header';
 import Sidebar from './Sidebar';
 
-const Layout = ({ children }) => {
+const Layout = () => {
     const location = useLocation();
     const isPOS = location.pathname === '/pos';
 
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
             <Header />
             {!isPOS && <Sidebar />}
             <div className={isPOS ? "page-wrapper ms-0" : "page-wrapper"}>
-                {children}
+                <Outlet />
             </div>
         </div>
     );

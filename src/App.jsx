@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import ProductList from './pages/ProductList';
@@ -17,7 +17,6 @@ import AddBrand from './pages/AddBrand';
 import EditBrand from './pages/EditBrand';
 import ImportProduct from './pages/ImportProduct';
 import PrintBarcode from './pages/PrintBarcode';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SalesList from './pages/SalesList';
 import AddSales from './pages/AddSales';
 import EditSales from './pages/EditSales';
@@ -84,11 +83,76 @@ import Chat from './pages/Chat';
 import Components from './pages/Components';
 import BlankPage from './pages/BlankPage';
 
+// Auth & Final Verification Imports
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import ForgotPassword from './pages/ForgotPassword';
+import Error404 from './pages/Error404';
+import Error500 from './pages/Error500';
+import PurchaseReturnList from './pages/PurchaseReturnList';
+import AddPurchaseReturn from './pages/AddPurchaseReturn';
+import EditPurchaseReturn from './pages/EditPurchaseReturn';
+
+// Tables, Forms, Charts, Icons Imports
+import TablesBasic from './pages/TablesBasic';
+import DataTables from './pages/DataTables';
+import FormBasicInputs from './pages/FormBasicInputs';
+import FormInputGroups from './pages/FormInputGroups';
+import FormHorizontal from './pages/FormHorizontal';
+import FormVertical from './pages/FormVertical';
+import FormMask from './pages/FormMask';
+import FormValidation from './pages/FormValidation';
+import FormSelect2 from './pages/FormSelect2';
+import FormFileupload from './pages/FormFileupload';
+import ChartApex from './pages/ChartApex';
+import ChartJs from './pages/ChartJs';
+import ChartMorris from './pages/ChartMorris';
+import ChartFlot from './pages/ChartFlot';
+import ChartPeity from './pages/ChartPeity';
+import IconFontawesome from './pages/IconFontawesome';
+import IconFeather from './pages/IconFeather';
+import IconIonic from './pages/IconIonic';
+import IconMaterial from './pages/IconMaterial';
+import IconPe7 from './pages/IconPe7';
+import IconSimpleline from './pages/IconSimpleline';
+import IconThemify from './pages/IconThemify';
+import IconWeather from './pages/IconWeather';
+import IconTypicon from './pages/IconTypicon';
+import IconFlag from './pages/IconFlag';
+
+// UI Elements Imports
+import SweetAlerts from './pages/SweetAlerts';
+import Tooltip from './pages/Tooltip';
+import Popover from './pages/Popover';
+import Ribbon from './pages/Ribbon';
+import Clipboard from './pages/Clipboard';
+import DragDrop from './pages/DragDrop';
+import RangeSlider from './pages/RangeSlider';
+import Rating from './pages/Rating';
+import Toastr from './pages/Toastr';
+import TextEditor from './pages/TextEditor';
+import Counter from './pages/Counter';
+import Scrollbar from './pages/Scrollbar';
+import Spinner from './pages/Spinner';
+import Notification from './pages/Notification';
+import Lightbox from './pages/Lightbox';
+import StickyNote from './pages/StickyNote';
+import Timeline from './pages/Timeline';
+import FormWizard from './pages/FormWizard';
+
 const App = () => {
   return (
     <Router>
-      <Layout>
-        <Routes>
+      <Routes>
+        {/* Auth & Error Routes (No Layout) */}
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/error-404" element={<Error404 />} />
+        <Route path="/error-500" element={<Error500 />} />
+
+        {/* Management Routes (With Layout) */}
+        <Route element={<Layout />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/products" element={<ProductList />} />
           <Route path="/add-product" element={<AddProduct />} />
@@ -117,6 +181,9 @@ const App = () => {
           <Route path="/add-purchase" element={<AddPurchase />} />
           <Route path="/edit-purchase" element={<EditPurchase />} />
           <Route path="/import-purchase" element={<ImportPurchase />} />
+          <Route path="/purchase-return" element={<PurchaseReturnList />} />
+          <Route path="/add-purchase-return" element={<AddPurchaseReturn />} />
+          <Route path="/edit-purchase-return" element={<EditPurchaseReturn />} />
           <Route path="/customers" element={<CustomerList />} />
           <Route path="/add-customer" element={<AddCustomer />} />
           <Route path="/edit-customer" element={<EditCustomer />} />
@@ -135,8 +202,6 @@ const App = () => {
           <Route path="/states" element={<StateList />} />
           <Route path="/add-state" element={<AddState />} />
           <Route path="/edit-state" element={<EditState />} />
-
-          {/* Phase 4 Routes */}
           <Route path="/expenses" element={<ExpenseList />} />
           <Route path="/add-expense" element={<AddExpense />} />
           <Route path="/edit-expense" element={<EditExpense />} />
@@ -148,8 +213,6 @@ const App = () => {
           <Route path="/customer-report" element={<CustomerReport />} />
           <Route path="/invoice-report" element={<InvoiceReport />} />
           <Route path="/purchase-order-report" element={<PurchaseOrderReport />} />
-
-          {/* Phase 5 Routes */}
           <Route path="/quotations" element={<QuotationList />} />
           <Route path="/add-quotation" element={<AddQuotation />} />
           <Route path="/edit-quotation" element={<EditQuotation />} />
@@ -170,8 +233,64 @@ const App = () => {
           <Route path="/chat" element={<Chat />} />
           <Route path="/components" element={<Components />} />
           <Route path="/blank-page" element={<BlankPage />} />
-        </Routes>
-      </Layout>
+
+          {/* Table Routes */}
+          <Route path="/tables-basic" element={<TablesBasic />} />
+          <Route path="/data-tables" element={<DataTables />} />
+
+          {/* Form Routes */}
+          <Route path="/form-basic-inputs" element={<FormBasicInputs />} />
+          <Route path="/form-input-groups" element={<FormInputGroups />} />
+          <Route path="/form-horizontal" element={<FormHorizontal />} />
+          <Route path="/form-vertical" element={<FormVertical />} />
+          <Route path="/form-mask" element={<FormMask />} />
+          <Route path="/form-validation" element={<FormValidation />} />
+          <Route path="/form-select2" element={<FormSelect2 />} />
+          <Route path="/form-fileupload" element={<FormFileupload />} />
+
+          {/* Chart Routes */}
+          <Route path="/chart-apex" element={<ChartApex />} />
+          <Route path="/chart-js" element={<ChartJs />} />
+          <Route path="/chart-morris" element={<ChartMorris />} />
+          <Route path="/chart-flot" element={<ChartFlot />} />
+          <Route path="/chart-peity" element={<ChartPeity />} />
+
+          {/* Icon Routes */}
+          <Route path="/icon-fontawesome" element={<IconFontawesome />} />
+          <Route path="/icon-feather" element={<IconFeather />} />
+          <Route path="/icon-ionic" element={<IconIonic />} />
+          <Route path="/icon-material" element={<IconMaterial />} />
+          <Route path="/icon-pe7" element={<IconPe7 />} />
+          <Route path="/icon-simpleline" element={<IconSimpleline />} />
+          <Route path="/icon-themify" element={<IconThemify />} />
+          <Route path="/icon-weather" element={<IconWeather />} />
+          <Route path="/icon-typicon" element={<IconTypicon />} />
+          <Route path="/icon-flag" element={<IconFlag />} />
+
+          {/* Elements Routes */}
+          <Route path="/sweetalerts" element={<SweetAlerts />} />
+          <Route path="/tooltip" element={<Tooltip />} />
+          <Route path="/popover" element={<Popover />} />
+          <Route path="/ribbon" element={<Ribbon />} />
+          <Route path="/clipboard" element={<Clipboard />} />
+          <Route path="/drag-drop" element={<DragDrop />} />
+          <Route path="/rangeslider" element={<RangeSlider />} />
+          <Route path="/rating" element={<Rating />} />
+          <Route path="/toastr" element={<Toastr />} />
+          <Route path="/text-editor" element={<TextEditor />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/scrollbar" element={<Scrollbar />} />
+          <Route path="/spinner" element={<Spinner />} />
+          <Route path="/notification" element={<Notification />} />
+          <Route path="/lightbox" element={<Lightbox />} />
+          <Route path="/stickynote" element={<StickyNote />} />
+          <Route path="/timeline" element={<Timeline />} />
+          <Route path="/form-wizard" element={<FormWizard />} />
+        </Route>
+
+        {/* Fallback for 404 */}
+        <Route path="*" element={<Error404 />} />
+      </Routes>
     </Router>
   );
 };

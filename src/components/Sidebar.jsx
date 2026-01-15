@@ -75,9 +75,9 @@ const Sidebar = () => {
                         <li className="submenu">
                             <a href="javascript:void(0);"><img src="/assets/img/icons/return1.svg" alt="img" /><span> Return</span> <span className="menu-arrow"></span></a>
                             <ul>
-                                <li><Link className={isActive('/sales-return-list')} to="/sales-return-list">Sales Return List</Link></li>
-                                <li><Link className={isActive('/add-sales-return-new')} to="/add-sales-return-new">Add Sales Return</Link></li>
-                                <li><Link className={isActive('/purchase-return-list')} to="/purchase-return-list">Purchase Return List</Link></li>
+                                <li><Link className={isActive('/sales-return')} to="/sales-return">Sales Return List</Link></li>
+                                <li><Link className={isActive('/add-sales-return')} to="/add-sales-return">Add Sales Return</Link></li>
+                                <li><Link className={isActive('/purchase-return')} to="/purchase-return">Purchase Return List</Link></li>
                                 <li><Link className={isActive('/add-purchase-return')} to="/add-purchase-return">Add Purchase Return</Link></li>
                             </ul>
                         </li>
@@ -112,84 +112,84 @@ const Sidebar = () => {
                         <li className="submenu">
                             <a href="javascript:void(0);"><i data-feather="alert-octagon"></i> <span> Error Pages </span> <span className="menu-arrow"></span></a>
                             <ul>
-                                <li><Link to="/error-404">404 Error</Link></li>
-                                <li><Link to="/error-500">500 Error</Link></li>
+                                <li><Link className={isActive('/error-404')} to="/error-404">404 Error</Link></li>
+                                <li><Link className={isActive('/error-500')} to="/error-500">500 Error</Link></li>
                             </ul>
                         </li>
                         <li className="submenu">
                             <a href="javascript:void(0);"><i data-feather="box"></i> <span>Elements </span> <span className="menu-arrow"></span></a>
                             <ul>
-                                <li><Link to="/sweetalerts">Sweet Alerts</Link></li>
-                                <li><Link to="/tooltip">Tooltip</Link></li>
-                                <li><Link to="/popover">Popover</Link></li>
-                                <li><Link to="/ribbon">Ribbon</Link></li>
-                                <li><Link to="/clipboard">Clipboard</Link></li>
-                                <li><Link to="/drag-drop">Drag & Drop</Link></li>
-                                <li><Link to="/rangeslider">Range Slider</Link></li>
-                                <li><Link to="/rating">Rating</Link></li>
-                                <li><Link to="/toastr">Toastr</Link></li>
-                                <li><Link to="/text-editor">Text Editor</Link></li>
-                                <li><Link to="/counter">Counter</Link></li>
-                                <li><Link to="/scrollbar">Scrollbar</Link></li>
-                                <li><Link to="/spinner">Spinner</Link></li>
-                                <li><Link to="/notification">Notification</Link></li>
-                                <li><Link to="/lightbox">Lightbox</Link></li>
-                                <li><Link to="/stickynote">Sticky Note</Link></li>
-                                <li><Link to="/timeline">Timeline</Link></li>
-                                <li><Link to="/form-wizard">Form Wizard</Link></li>
+                                <li><Link className={isActive('/sweetalerts')} to="/sweetalerts">Sweet Alerts</Link></li>
+                                <li><Link className={isActive('/tooltip')} to="/tooltip">Tooltip</Link></li>
+                                <li><Link className={isActive('/popover')} to="/popover">Popover</Link></li>
+                                <li><Link className={isActive('/ribbon')} to="/ribbon">Ribbon</Link></li>
+                                <li><Link className={isActive('/clipboard')} to="/clipboard">Clipboard</Link></li>
+                                <li><Link className={isActive('/drag-drop')} to="/drag-drop">Drag & Drop</Link></li>
+                                <li><Link className={isActive('/rangeslider')} to="/rangeslider">Range Slider</Link></li>
+                                <li><Link className={isActive('/rating')} to="/rating">Rating</Link></li>
+                                <li><Link className={isActive('/toastr')} to="/toastr">Toastr</Link></li>
+                                <li><Link className={isActive('/text-editor')} to="/text-editor">Text Editor</Link></li>
+                                <li><Link className={isActive('/counter')} to="/counter">Counter</Link></li>
+                                <li><Link className={isActive('/scrollbar')} to="/scrollbar">Scrollbar</Link></li>
+                                <li><Link className={isActive('/spinner')} to="/spinner">Spinner</Link></li>
+                                <li><Link className={isActive('/notification')} to="/notification">Notification</Link></li>
+                                <li><Link className={isActive('/lightbox')} to="/lightbox">Lightbox</Link></li>
+                                <li><Link className={isActive('/stickynote')} to="/stickynote">Sticky Note</Link></li>
+                                <li><Link className={isActive('/timeline')} to="/timeline">Timeline</Link></li>
+                                <li><Link className={isActive('/form-wizard')} to="/form-wizard">Form Wizard</Link></li>
                             </ul>
                         </li>
                         <li className="submenu">
                             <a href="javascript:void(0);"><i data-feather="bar-chart-2"></i> <span> Charts </span> <span className="menu-arrow"></span></a>
                             <ul>
-                                <li><Link to="/chart-apex">Apex Charts</Link></li>
-                                <li><Link to="/chart-js">Chart Js</Link></li>
-                                <li><Link to="/chart-morris">Morris Charts</Link></li>
-                                <li><Link to="/chart-flot">Flot Charts</Link></li>
-                                <li><Link to="/chart-peity">Peity Charts</Link></li>
+                                <li><Link className={isActive('/chart-apex')} to="/chart-apex">Apex Charts</Link></li>
+                                <li><Link className={isActive('/chart-js')} to="/chart-js">Chart Js</Link></li>
+                                <li><Link className={isActive('/chart-morris')} to="/chart-morris">Morris Charts</Link></li>
+                                <li><Link className={isActive('/chart-flot')} to="/chart-flot">Flot Charts</Link></li>
+                                <li><Link className={isActive('/chart-peity')} to="/chart-peity">Peity Charts</Link></li>
                             </ul>
                         </li>
                         <li className="submenu">
                             <a href="javascript:void(0);"><i data-feather="award"></i><span> Icons </span> <span className="menu-arrow"></span></a>
                             <ul>
-                                <li><Link to="/icon-fontawesome">Fontawesome Icons</Link></li>
-                                <li><Link to="/icon-feather">Feather Icons</Link></li>
-                                <li><Link to="/icon-ionic">Ionic Icons</Link></li>
-                                <li><Link to="/icon-material">Material Icons</Link></li>
-                                <li><Link to="/icon-pe7">Pe7 Icons</Link></li>
-                                <li><Link to="/icon-simpleline">Simpleline Icons</Link></li>
-                                <li><Link to="/icon-themify">Themify Icons</Link></li>
-                                <li><Link to="/icon-weather">Weather Icons</Link></li>
-                                <li><Link to="/icon-typicon">Typicon Icons</Link></li>
-                                <li><Link to="/icon-flag">Flag Icons</Link></li>
+                                <li><Link className={isActive('/icon-fontawesome')} to="/icon-fontawesome">Fontawesome Icons</Link></li>
+                                <li><Link className={isActive('/icon-feather')} to="/icon-feather">Feather Icons</Link></li>
+                                <li><Link className={isActive('/icon-ionic')} to="/icon-ionic">Ionic Icons</Link></li>
+                                <li><Link className={isActive('/icon-material')} to="/icon-material">Material Icons</Link></li>
+                                <li><Link className={isActive('/icon-pe7')} to="/icon-pe7">Pe7 Icons</Link></li>
+                                <li><Link className={isActive('/icon-simpleline')} to="/icon-simpleline">Simpleline Icons</Link></li>
+                                <li><Link className={isActive('/icon-themify')} to="/icon-themify">Themify Icons</Link></li>
+                                <li><Link className={isActive('/icon-weather')} to="/icon-weather">Weather Icons</Link></li>
+                                <li><Link className={isActive('/icon-typicon')} to="/icon-typicon">Typicon Icons</Link></li>
+                                <li><Link className={isActive('/icon-flag')} to="/icon-flag">Flag Icons</Link></li>
                             </ul>
                         </li>
                         <li className="submenu">
                             <a href="javascript:void(0);"><i data-feather="columns"></i> <span> Forms </span> <span className="menu-arrow"></span></a>
                             <ul>
-                                <li><Link to="/form-basic-inputs">Basic Inputs</Link></li>
-                                <li><Link to="/form-input-groups">Input Groups</Link></li>
-                                <li><Link to="/form-horizontal">Horizontal Form</Link></li>
-                                <li><Link to="/form-vertical">Vertical Form</Link></li>
-                                <li><Link to="/form-mask">Form Mask</Link></li>
-                                <li><Link to="/form-validation">Form Validation</Link></li>
-                                <li><Link to="/form-select2">Form Select2</Link></li>
-                                <li><Link to="/form-fileupload">File Upload</Link></li>
+                                <li><Link className={isActive('/form-basic-inputs')} to="/form-basic-inputs">Basic Inputs</Link></li>
+                                <li><Link className={isActive('/form-input-groups')} to="/form-input-groups">Input Groups</Link></li>
+                                <li><Link className={isActive('/form-horizontal')} to="/form-horizontal">Horizontal Form</Link></li>
+                                <li><Link className={isActive('/form-vertical')} to="/form-vertical">Vertical Form</Link></li>
+                                <li><Link className={isActive('/form-mask')} to="/form-mask">Form Mask</Link></li>
+                                <li><Link className={isActive('/form-validation')} to="/form-validation">Form Validation</Link></li>
+                                <li><Link className={isActive('/form-select2')} to="/form-select2">Form Select2</Link></li>
+                                <li><Link className={isActive('/form-fileupload')} to="/form-fileupload">File Upload</Link></li>
                             </ul>
                         </li>
                         <li className="submenu">
                             <a href="javascript:void(0);"><i data-feather="layout"></i> <span> Table </span> <span className="menu-arrow"></span></a>
                             <ul>
-                                <li><Link to="/tables-basic">Basic Tables</Link></li>
-                                <li><Link to="/data-tables">Data Table</Link></li>
+                                <li><Link className={isActive('/tables-basic')} to="/tables-basic">Basic Tables</Link></li>
+                                <li><Link className={isActive('/data-tables')} to="/data-tables">Data Table</Link></li>
                             </ul>
                         </li>
                         <li className="submenu">
                             <a href="javascript:void(0);"><img src="/assets/img/icons/product.svg" alt="img" /><span> Application</span> <span className="menu-arrow"></span></a>
                             <ul>
-                                <li><Link to="/chat">Chat</Link></li>
-                                <li><Link to="/calendar">Calendar</Link></li>
-                                <li><Link to="/email">Email</Link></li>
+                                <li><Link className={isActive('/chat')} to="/chat">Chat</Link></li>
+                                <li><Link className={isActive('/calendar')} to="/calendar">Calendar</Link></li>
+                                <li><Link className={isActive('/email')} to="/email">Email</Link></li>
                             </ul>
                         </li>
                         <li className="submenu">
@@ -207,8 +207,8 @@ const Sidebar = () => {
                         <li className="submenu">
                             <a href="javascript:void(0);"><img src="/assets/img/icons/users1.svg" alt="img" /><span> Users</span> <span className="menu-arrow"></span></a>
                             <ul>
-                                <li><Link to="/add-user-new">New User</Link></li>
-                                <li><Link to="/users-list">Users List</Link></li>
+                                <li><Link className={isActive('/add-user')} to="/add-user">New User</Link></li>
+                                <li><Link className={isActive('/users')} to="/users">Users List</Link></li>
                             </ul>
                         </li>
                         <li className="submenu">

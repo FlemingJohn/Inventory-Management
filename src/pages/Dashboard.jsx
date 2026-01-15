@@ -150,40 +150,40 @@ const Dashboard = () => {
                                             <tr>
                                                 <td>1</td>
                                                 <td className="productimgname">
-                                                    <a href="productlist.html" className="product-img">
+                                                    <Link to="/products" className="product-img">
                                                         <img src="/assets/img/product/product22.jpg" alt="product" />
-                                                    </a>
-                                                    <a href="productlist.html">Apple Earpods</a>
+                                                    </Link>
+                                                    <Link to="/products">Apple Earpods</Link>
                                                 </td>
                                                 <td>$891.2</td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
                                                 <td className="productimgname">
-                                                    <a href="productlist.html" className="product-img">
+                                                    <Link to="/products" className="product-img">
                                                         <img src="/assets/img/product/product23.jpg" alt="product" />
-                                                    </a>
-                                                    <a href="productlist.html">iPhone 11</a>
+                                                    </Link>
+                                                    <Link to="/products">iPhone 11</Link>
                                                 </td>
                                                 <td>$668.51</td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
                                                 <td className="productimgname">
-                                                    <a href="productlist.html" className="product-img">
+                                                    <Link to="/products" className="product-img">
                                                         <img src="/assets/img/product/product24.jpg" alt="product" />
-                                                    </a>
-                                                    <a href="productlist.html">samsung</a>
+                                                    </Link>
+                                                    <Link to="/products">samsung</Link>
                                                 </td>
                                                 <td>$522.29</td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
                                                 <td className="productimgname">
-                                                    <a href="productlist.html" className="product-img">
+                                                    <Link to="/products" className="product-img">
                                                         <img src="/assets/img/product/product6.jpg" alt="product" />
-                                                    </a>
-                                                    <a href="productlist.html">Macbook Pro</a>
+                                                    </Link>
+                                                    <Link to="/products">Macbook Pro</Link>
                                                 </td>
                                                 <td>$291.01</td>
                                             </tr>
