@@ -1,0 +1,97 @@
+/* Minimal Responsive Fixes - Bootstrap Compatible */
+
+/* ============================================
+   SPACING FIXES
+   ============================================ */
+
+/* Reduce excessive spacing between dashboard sections */
+.page-wrapper .content .row {
+    margin-bottom: 15px;
+}
+
+/* Remove bottom margin from last row */
+.page-wrapper .content .row:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================
+   SIDEBAR MINI/COLLAPSED STATE
+   ============================================ */
+
+body.mini-sidebar .sidebar {
+    width: 60px;
+}
+
+body.mini-sidebar .sidebar .sidebar-menu ul li a span {
+    display: none;
+}
+
+body.mini-sidebar .sidebar .sidebar-menu ul li a {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+body.mini-sidebar .sidebar .sidebar-menu ul li a img {
+    margin: 0 auto;
+}
+
+body.mini-sidebar .page-wrapper {
+    margin-left: 60px;
+}
+
+body.mini-sidebar .header .header-left {
+    width: 60px;
+    padding: 0;
+}
+
+body.mini-sidebar .sidebar .sidebar-menu .menu-arrow {
+    display: none;
+}
+
+/* Smooth transitions */
+.sidebar {
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.page-wrapper {
+    transition: margin-left 0.3s ease;
+}
+
+.header .header-left {
+    transition: width 0.3s ease;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE
+   ============================================ */
+
+@media (max-width: 991px) {
+    .page-wrapper {
+        margin-left: 0 !important;
+    }
+
+    body.mini-sidebar .page-wrapper {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .page-wrapper .content {
+        padding: 15px;
+    }
+}
+
+/* ============================================
+   PREVENT OVERFLOW
+   ============================================ */
+
+body,
+html {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
