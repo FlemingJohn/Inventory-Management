@@ -109,7 +109,7 @@ const Header = () => {
                             </div>
                             <hr className="m-0" />
                             <Link className="dropdown-item" to="/profile"> <i className="me-2" data-feather="user"></i> My Profile</Link>
-                            <Link className="dropdown-item" to="/settings"><i className="me-2" data-feather="settings"></i>Settings</Link>
+                            <Link className="dropdown-item" to="/general-settings"><i className="me-2" data-feather="settings"></i>Settings</Link>
                             <hr className="m-0" />
                             <Link className="dropdown-item logout pb-0" to="/signin"><img src="/assets/img/icons/log-out.svg" className="me-2" alt="Logout" />Logout</Link>
                         </div>
@@ -121,7 +121,7 @@ const Header = () => {
                 <a href="javascript:void(0);" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fa fa-ellipsis-v"></i></a>
                 <div className="dropdown-menu dropdown-menu-right">
                     <Link className="dropdown-item" to="/profile">My Profile</Link>
-                    <Link className="dropdown-item" to="/settings">Settings</Link>
+                    <Link className="dropdown-item" to="/general-settings">Settings</Link>
                     <Link className="dropdown-item" to="/signin">Logout</Link>
                 </div>
             </div>
