@@ -18,6 +18,36 @@ import EditBrand from './pages/EditBrand';
 import ImportProduct from './pages/ImportProduct';
 import PrintBarcode from './pages/PrintBarcode';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SalesList from './pages/SalesList';
+import AddSales from './pages/AddSales';
+import EditSales from './pages/EditSales';
+import SalesDetails from './pages/SalesDetails';
+import POS from './pages/POS';
+import SalesReturnList from './pages/SalesReturnList';
+import AddSalesReturn from './pages/AddSalesReturn';
+import EditSalesReturn from './pages/EditSalesReturn';
+import PurchaseList from './pages/PurchaseList';
+import AddPurchase from './pages/AddPurchase';
+import EditPurchase from './pages/EditPurchase';
+import ImportPurchase from './pages/ImportPurchase';
+import CustomerList from './pages/CustomerList';
+import AddCustomer from './pages/AddCustomer';
+import EditCustomer from './pages/EditCustomer';
+import SupplierList from './pages/SupplierList';
+import AddSupplier from './pages/AddSupplier';
+import EditSupplier from './pages/EditSupplier';
+import UserList from './pages/UserList';
+import AddUser from './pages/AddUser';
+import EditUser from './pages/EditUser';
+import StoreList from './pages/StoreList';
+import AddStore from './pages/AddStore';
+import EditStore from './pages/EditStore';
+import CountryList from './pages/CountryList';
+import AddCountry from './pages/AddCountry';
+import EditCountry from './pages/EditCountry';
+import StateList from './pages/StateList';
+import AddState from './pages/AddState';
+import EditState from './pages/EditState';
 
 const App = () => {
   return (
@@ -38,8 +68,38 @@ const App = () => {
           <Route path="/brands" element={<BrandList />} />
           <Route path="/add-brand" element={<AddBrand />} />
           <Route path="/edit-brand" element={<EditBrand />} />
-          <Route path="/import-product" element={<ImportProduct />} />
-          <Route path="/print-barcode" element={<PrintBarcode />} />
+          <Route path="/import-products" element={<ImportProduct />} />
+          <Route path="/barcode" element={<PrintBarcode />} />
+          <Route path="/sales" element={<SalesList />} />
+          <Route path="/add-sales" element={<AddSales />} />
+          <Route path="/edit-sales" element={<EditSales />} />
+          <Route path="/sales-details" element={<SalesDetails />} />
+          <Route path="/pos" element={<POS />} />
+          <Route path="/sales-return" element={<SalesReturnList />} />
+          <Route path="/add-sales-return" element={<AddSalesReturn />} />
+          <Route path="/edit-sales-return" element={<EditSalesReturn />} />
+          <Route path="/purchases" element={<PurchaseList />} />
+          <Route path="/add-purchase" element={<AddPurchase />} />
+          <Route path="/edit-purchase" element={<EditPurchase />} />
+          <Route path="/import-purchase" element={<ImportPurchase />} />
+          <Route path="/customers" element={<CustomerList />} />
+          <Route path="/add-customer" element={<AddCustomer />} />
+          <Route path="/edit-customer" element={<EditCustomer />} />
+          <Route path="/suppliers" element={<SupplierList />} />
+          <Route path="/add-supplier" element={<AddSupplier />} />
+          <Route path="/edit-supplier" element={<EditSupplier />} />
+          <Route path="/users" element={<UserList />} />
+          <Route path="/add-user" element={<AddUser />} />
+          <Route path="/edit-user" element={<EditUser />} />
+          <Route path="/stores" element={<StoreList />} />
+          <Route path="/add-store" element={<AddStore />} />
+          <Route path="/edit-store" element={<EditStore />} />
+          <Route path="/countries" element={<CountryList />} />
+          <Route path="/add-country" element={<AddCountry />} />
+          <Route path="/edit-country" element={<EditCountry />} />
+          <Route path="/states" element={<StateList />} />
+          <Route path="/add-state" element={<AddState />} />
+          <Route path="/edit-state" element={<EditState />} />
         </Routes>
       </Layout>
     </Router>
