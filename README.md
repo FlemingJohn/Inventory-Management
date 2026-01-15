@@ -1,16 +1,51 @@
-# React + Vite
+# Dreams POS - Inventory Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium Inventory Management System built with React and Vite, converted from a high-quality HTML admin template. This project features a clean, responsive design for managing products, categories, and inventory.
 
-Currently, two official plugins are available:
+## 🚀 Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19**: Modern functional components and hooks.
+- **Vite**: Ultra-fast build tool and development server.
+- **Tailwind CSS v4**: Utility-first CSS framework for custom styling.
+- **React Router Dom**: Seamless Single Page Application (SPA) navigation.
+- **Vercel**: Optimized for professional cloud deployment.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive Dashboard**: Real-time overview of inventory statistics.
+- **Product Management**: Comprehensive product list with search and filter capabilities.
+- **Add Product Flow**: Streamlined form for creating new inventory items.
+- **Category Management**: Organize products into logical categories.
+- **Preloading Animation**: Maintains the original premium feel with a loading state.
 
-## Expanding the ESLint configuration
+## 🛠️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+Run the development server:
+```bash
+npm run dev
+```
+
+### Build
+
+Build for production:
+```bash
+npm run build
+```
+
+## 🌐 Deployment
+
+The project is configured for easy deployment on **Vercel**. The included `vercel.json` ensures that SPA routing works out of the box.
+
+---
+
+*Converted with care to ensure a clean and readable codebase.*
