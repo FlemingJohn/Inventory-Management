@@ -49,6 +49,19 @@ import StateList from './pages/StateList';
 import AddState from './pages/AddState';
 import EditState from './pages/EditState';
 
+// Phase 4 Imports
+import ExpenseList from './pages/ExpenseList';
+import AddExpense from './pages/AddExpense';
+import EditExpense from './pages/EditExpense';
+import ExpenseCategory from './pages/ExpenseCategory';
+import PurchaseReport from './pages/PurchaseReport';
+import InventoryReport from './pages/InventoryReport';
+import SalesReport from './pages/SalesReport';
+import SupplierReport from './pages/SupplierReport';
+import CustomerReport from './pages/CustomerReport';
+import InvoiceReport from './pages/InvoiceReport';
+import PurchaseOrderReport from './pages/PurchaseOrderReport';
+
 const App = () => {
   return (
     <Router>
@@ -100,6 +113,19 @@ const App = () => {
           <Route path="/states" element={<StateList />} />
           <Route path="/add-state" element={<AddState />} />
           <Route path="/edit-state" element={<EditState />} />
+
+          {/* Phase 4 Routes */}
+          <Route path="/expenses" element={<ExpenseList />} />
+          <Route path="/add-expense" element={<AddExpense />} />
+          <Route path="/edit-expense" element={<EditExpense />} />
+          <Route path="/expense-category" element={<ExpenseCategory />} />
+          <Route path="/purchase-report" element={<PurchaseReport />} />
+          <Route path="/inventory-report" element={<InventoryReport />} />
+          <Route path="/sales-report" element={<SalesReport />} />
+          <Route path="/supplier-report" element={<SupplierReport />} />
+          <Route path="/customer-report" element={<CustomerReport />} />
+          <Route path="/invoice-report" element={<InvoiceReport />} />
+          <Route path="/purchase-order-report" element={<PurchaseOrderReport />} />
         </Routes>
       </Layout>
     </Router>
