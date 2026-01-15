@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const AddProduct = () => {
+const EditProduct = () => {
     return (
         <div className="page-wrapper">
             <div className="content">
                 <div className="page-header">
                     <div className="page-title">
-                        <h4>Product Add</h4>
-                        <h6>Create new product</h6>
+                        <h4>Product Edit</h4>
+                        <h6>Update your product</h6>
                     </div>
                 </div>
 
@@ -18,15 +18,15 @@ const AddProduct = () => {
                             <div className="col-lg-3 col-sm-6 col-12">
                                 <div className="form-group">
                                     <label>Product Name</label>
-                                    <input type="text" />
+                                    <input type="text" defaultValue="Macbook pro" />
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6 col-12">
                                 <div className="form-group">
                                     <label>Category</label>
                                     <select className="select">
-                                        <option>Choose Category</option>
                                         <option>Computers</option>
+                                        <option>Mac</option>
                                     </select>
                                 </div>
                             </div>
@@ -34,8 +34,8 @@ const AddProduct = () => {
                                 <div className="form-group">
                                     <label>Sub Category</label>
                                     <select className="select">
-                                        <option>Choose Sub Category</option>
-                                        <option>Fruits</option>
+                                        <option>None</option>
+                                        <option>option1</option>
                                     </select>
                                 </div>
                             </div>
@@ -43,8 +43,8 @@ const AddProduct = () => {
                                 <div className="form-group">
                                     <label>Brand</label>
                                     <select className="select">
-                                        <option>Choose Brand</option>
-                                        <option>Brand</option>
+                                        <option>None</option>
+                                        <option>option1</option>
                                     </select>
                                 </div>
                             </div>
@@ -52,33 +52,33 @@ const AddProduct = () => {
                                 <div className="form-group">
                                     <label>Unit</label>
                                     <select className="select">
-                                        <option>Choose Unit</option>
-                                        <option>Unit</option>
+                                        <option>Piece</option>
+                                        <option>Kg</option>
                                     </select>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6 col-12">
                                 <div className="form-group">
                                     <label>SKU</label>
-                                    <input type="text" />
+                                    <input type="text" defaultValue="PT0002" />
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6 col-12">
                                 <div className="form-group">
                                     <label>Minimum Qty</label>
-                                    <input type="text" />
+                                    <input type="text" defaultValue="5" />
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6 col-12">
                                 <div className="form-group">
                                     <label>Quantity</label>
-                                    <input type="text" />
+                                    <input type="text" defaultValue="50" />
                                 </div>
                             </div>
                             <div className="col-lg-12">
                                 <div className="form-group">
                                     <label>Description</label>
-                                    <textarea className="form-control"></textarea>
+                                    <textarea className="form-control" defaultValue="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"></textarea>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6 col-12">
@@ -103,14 +103,14 @@ const AddProduct = () => {
                             <div className="col-lg-3 col-sm-6 col-12">
                                 <div className="form-group">
                                     <label>Price</label>
-                                    <input type="text" />
+                                    <input type="text" defaultValue="1500.00" />
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6 col-12">
                                 <div className="form-group">
                                     <label> Status</label>
                                     <select className="select">
-                                        <option>Closed</option>
+                                        <option>Active</option>
                                         <option>Open</option>
                                     </select>
                                 </div>
@@ -127,8 +127,28 @@ const AddProduct = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="col-12">
+                                <div className="product-list">
+                                    <ul className="row">
+                                        <li>
+                                            <div className="productviews">
+                                                <div className="productviewsimg">
+                                                    <img src="/assets/img/icons/macbook.svg" alt="img" />
+                                                </div>
+                                                <div className="productviewscontent">
+                                                    <div className="productviewsname">
+                                                        <h2>macbookpro.jpg</h2>
+                                                        <h3>581kb</h3>
+                                                    </div>
+                                                    <a href="javascript:void(0);" className="hideset">x</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div className="col-lg-12">
-                                <button className="btn btn-submit me-2">Submit</button>
+                                <button className="btn btn-submit me-2">Update</button>
                                 <Link to="/products" className="btn btn-cancel">Cancel</Link>
                             </div>
                         </div>
@@ -139,4 +159,4 @@ const AddProduct = () => {
     );
 };
 
-export default AddProduct;
+export default EditProduct;

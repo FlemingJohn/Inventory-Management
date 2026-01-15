@@ -1,18 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductList = () => {
+const SubCategoryList = () => {
     return (
         <div className="page-wrapper">
             <div className="content">
                 <div className="page-header">
                     <div className="page-title">
-                        <h4>Product List</h4>
-                        <h6>Manage your products</h6>
+                        <h4>Product Sub Category list</h4>
+                        <h6>View/Search product Category</h6>
                     </div>
                     <div className="page-btn">
-                        <Link to="/add-product" className="btn btn-added">
-                            <img src="/assets/img/icons/plus.svg" alt="img" className="me-1" />Add New Product
+                        <Link to="/add-sub-category" className="btn btn-added">
+                            <img src="/assets/img/icons/plus.svg" className="me-2" alt="img" />
+                            Add Sub Category
                         </Link>
                     </div>
                 </div>
@@ -49,37 +50,37 @@ const ProductList = () => {
                         <div className="card" id="filter_inputs">
                             <div className="card-body pb-0">
                                 <div className="row">
-                                    <div className="col-lg-12 col-sm-12">
-                                        <div className="row">
-                                            <div className="col-lg-2 col-sm-6 col-12">
-                                                <div className="form-group">
-                                                    <select className="select">
-                                                        <option>Choose Category</option>
-                                                        <option>Computers</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-2 col-sm-6 col-12">
-                                                <div className="form-group">
-                                                    <select className="select">
-                                                        <option>Choose Sub Category</option>
-                                                        <option>Fruits</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-2 col-sm-6 col-12">
-                                                <div className="form-group">
-                                                    <select className="select">
-                                                        <option>Choose Brand</option>
-                                                        <option>Iphone</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-1 col-sm-6 col-12 ms-auto">
-                                                <div className="form-group">
-                                                    <a className="btn btn-filters ms-auto"><img src="/assets/img/icons/search-whites.svg" alt="img" /></a>
-                                                </div>
-                                            </div>
+                                    <div className="col-lg-2 col-sm-6 col-12">
+                                        <div className="form-group">
+                                            <label>Category</label>
+                                            <select className="select">
+                                                <option>Choose Category</option>
+                                                <option>Computers</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-2 col-sm-6 col-12">
+                                        <div className="form-group">
+                                            <label>Sub Category</label>
+                                            <select className="select">
+                                                <option>Choose Sub Category</option>
+                                                <option>Fruits</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-2 col-sm-6 col-12">
+                                        <div className="form-group">
+                                            <label>Category Code</label>
+                                            <select className="select">
+                                                <option>CT001</option>
+                                                <option>CT002</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-1 col-sm-6 col-12 ms-auto">
+                                        <div className="form-group">
+                                            <label>&nbsp;</label>
+                                            <a className="btn btn-filters ms-auto"><img src="/assets/img/icons/search-whites.svg" alt="img" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -87,7 +88,7 @@ const ProductList = () => {
                         </div>
 
                         <div className="table-responsive">
-                            <table className="table  datatable">
+                            <table className="table datanew">
                                 <thead>
                                     <tr>
                                         <th>
@@ -96,13 +97,11 @@ const ProductList = () => {
                                                 <span className="checkmarks"></span>
                                             </label>
                                         </th>
-                                        <th>Product Name</th>
-                                        <th>SKU</th>
-                                        <th>Category </th>
-                                        <th>Brand</th>
-                                        <th>price</th>
-                                        <th>Unit</th>
-                                        <th>Qty</th>
+                                        <th>Image</th>
+                                        <th>Category</th>
+                                        <th>Parent category</th>
+                                        <th>Category Code</th>
+                                        <th>Description</th>
                                         <th>Created By</th>
                                         <th>Action</th>
                                     </tr>
@@ -115,27 +114,21 @@ const ProductList = () => {
                                                 <span className="checkmarks"></span>
                                             </label>
                                         </td>
-                                        <td className="productimgname">
-                                            <a href="javascript:void(0);" className="product-img">
+                                        <td>
+                                            <a className="product-img">
                                                 <img src="/assets/img/product/product1.jpg" alt="product" />
                                             </a>
-                                            <a href="javascript:void(0);">Macbook pro</a>
                                         </td>
-                                        <td>PT001</td>
                                         <td>Computers</td>
-                                        <td>N/D</td>
-                                        <td>1500.00</td>
-                                        <td>pc</td>
-                                        <td>100.00</td>
+                                        <td>Computers</td>
+                                        <td>CT001</td>
+                                        <td>Computers Description</td>
                                         <td>Admin</td>
                                         <td>
-                                            <Link className="me-3" to="/product-details">
-                                                <img src="/assets/img/icons/eye.svg" alt="img" />
-                                            </Link>
-                                            <Link className="me-3" to="/edit-product">
+                                            <Link className="me-3" to="/edit-sub-category">
                                                 <img src="/assets/img/icons/edit.svg" alt="img" />
                                             </Link>
-                                            <a className="confirm-text" href="javascript:void(0);">
+                                            <a className="me-3 confirm-text" href="javascript:void(0);">
                                                 <img src="/assets/img/icons/delete.svg" alt="img" />
                                             </a>
                                         </td>
@@ -150,4 +143,4 @@ const ProductList = () => {
     );
 };
 
-export default ProductList;
+export default SubCategoryList;
