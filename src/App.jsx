@@ -62,6 +62,28 @@ import CustomerReport from './pages/CustomerReport';
 import InvoiceReport from './pages/InvoiceReport';
 import PurchaseOrderReport from './pages/PurchaseOrderReport';
 
+// Phase 5 Imports
+import QuotationList from './pages/QuotationList';
+import AddQuotation from './pages/AddQuotation';
+import EditQuotation from './pages/EditQuotation';
+import TransferList from './pages/TransferList';
+import AddTransfer from './pages/AddTransfer';
+import EditTransfer from './pages/EditTransfer';
+import ImportTransfer from './pages/ImportTransfer';
+import GeneralSettings from './pages/GeneralSettings';
+import EmailSettings from './pages/EmailSettings';
+import PaymentSettings from './pages/PaymentSettings';
+import CurrencySettings from './pages/CurrencySettings';
+import GroupPermissions from './pages/GroupPermissions';
+import TaxRates from './pages/TaxRates';
+import Profile from './pages/Profile';
+import Activities from './pages/Activities';
+import Calendar from './pages/Calendar';
+import Email from './pages/Email';
+import Chat from './pages/Chat';
+import Components from './pages/Components';
+import BlankPage from './pages/BlankPage';
+
 const App = () => {
   return (
     <Router>
@@ -126,6 +148,28 @@ const App = () => {
           <Route path="/customer-report" element={<CustomerReport />} />
           <Route path="/invoice-report" element={<InvoiceReport />} />
           <Route path="/purchase-order-report" element={<PurchaseOrderReport />} />
+
+          {/* Phase 5 Routes */}
+          <Route path="/quotations" element={<QuotationList />} />
+          <Route path="/add-quotation" element={<AddQuotation />} />
+          <Route path="/edit-quotation" element={<EditQuotation />} />
+          <Route path="/transfers" element={<TransferList />} />
+          <Route path="/add-transfer" element={<AddTransfer />} />
+          <Route path="/edit-transfer" element={<EditTransfer />} />
+          <Route path="/import-transfer" element={<ImportTransfer />} />
+          <Route path="/general-settings" element={<GeneralSettings />} />
+          <Route path="/email-settings" element={<EmailSettings />} />
+          <Route path="/payment-settings" element={<PaymentSettings />} />
+          <Route path="/currency-settings" element={<CurrencySettings />} />
+          <Route path="/permissions" element={<GroupPermissions />} />
+          <Route path="/tax-rates" element={<TaxRates />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/activities" element={<Activities />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/email" element={<Email />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/components" element={<Components />} />
+          <Route path="/blank-page" element={<BlankPage />} />
         </Routes>
       </Layout>
     </Router>

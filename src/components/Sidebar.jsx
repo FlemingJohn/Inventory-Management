@@ -195,13 +195,13 @@ const Sidebar = () => {
                         <li className="submenu">
                             <a href="javascript:void(0);"><img src="/assets/img/icons/time.svg" alt="img" /><span> Report</span> <span className="menu-arrow"></span></a>
                             <ul>
-                                <li><Link to="/report-purchase-order">Purchase order report</Link></li>
-                                <li><Link to="/report-inventory">Inventory Report</Link></li>
-                                <li><Link to="/report-sales">Sales Report</Link></li>
-                                <li><Link to="/report-invoice">Invoice Report</Link></li>
-                                <li><Link to="/report-purchase">Purchase Report</Link></li>
-                                <li><Link to="/report-supplier">Supplier Report</Link></li>
-                                <li><Link to="/report-customer">Customer Report</Link></li>
+                                <li><Link className={isActive('/purchase-order-report')} to="/purchase-order-report">Purchase order report</Link></li>
+                                <li><Link className={isActive('/inventory-report')} to="/inventory-report">Inventory Report</Link></li>
+                                <li><Link className={isActive('/sales-report')} to="/sales-report">Sales Report</Link></li>
+                                <li><Link className={isActive('/invoice-report')} to="/invoice-report">Invoice Report</Link></li>
+                                <li><Link className={isActive('/purchase-report')} to="/purchase-report">Purchase Report</Link></li>
+                                <li><Link className={isActive('/supplier-report')} to="/supplier-report">Supplier Report</Link></li>
+                                <li><Link className={isActive('/customer-report')} to="/customer-report">Customer Report</Link></li>
                             </ul>
                         </li>
                         <li className="submenu">
@@ -214,12 +214,12 @@ const Sidebar = () => {
                         <li className="submenu">
                             <a href="javascript:void(0);"><img src="/assets/img/icons/settings.svg" alt="img" /><span> Settings</span> <span className="menu-arrow"></span></a>
                             <ul>
-                                <li><Link to="/settings-general">General Settings</Link></li>
-                                <li><Link to="/settings-email">Email Settings</Link></li>
-                                <li><Link to="/settings-payment">Payment Settings</Link></li>
-                                <li><Link to="/settings-currency">Currency Settings</Link></li>
-                                <li><Link to="/settings-group-permissions">Group Permissions</Link></li>
-                                <li><Link to="/settings-tax-rates">Tax Rates</Link></li>
+                                <li><Link className={isActive('/general-settings')} to="/general-settings">General Settings</Link></li>
+                                <li><Link className={isActive('/email-settings')} to="/email-settings">Email Settings</Link></li>
+                                <li><Link className={isActive('/payment-settings')} to="/payment-settings">Payment Settings</Link></li>
+                                <li><Link className={isActive('/currency-settings')} to="/currency-settings">Currency Settings</Link></li>
+                                <li><Link className={isActive('/permissions')} to="/permissions">Group Permissions</Link></li>
+                                <li><Link className={isActive('/tax-rates')} to="/tax-rates">Tax Rates</Link></li>
                             </ul>
                         </li>
                     </ul>
